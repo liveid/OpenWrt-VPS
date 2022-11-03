@@ -75,10 +75,10 @@ fi
 #File Preparation
 #No Checking MD5
 vps_kernel=$(uname -r)
-openwrt-kernel="openwrt-kernel.bin"
+#openwrt-kernel="openwrt-kernel.bin"
 
-wget -c --no-check-certificate https://github.com/liveid/OpenWrt-VPS/raw/main/$openwrt-kernel
-cp $openwrt-kernel /boot/vmlinuz-$vps_kernel
+wget -c --no-check-certificate https://github.com/liveid/OpenWrt-VPS/raw/main/openwrt-kernel.bin
+cp openwrt-kernel.bin /boot/vmlinuz-$vps_kernel
 
 echo -e "${red}Rebooting${none}..."
 reboot
