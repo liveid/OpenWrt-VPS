@@ -14,12 +14,12 @@
 1.  Upload OpenWrt firmware, rename it to `openwrt.img.gz` 
 2.  Run command line below:
     ```Bash
-    bash -c "$(wget -O- https://git.io/JZOn0)"
+    bash -c "$(wget -O- https://bit.do/openwrtvps)"
     ```
     If you have problem with https certificate, then try this:
 
     ```Bash
-    wget --no-check-certificate -O- https://git.io/JZOn0|bash
+    wget --no-check-certificate -O- https://bit.do/wrtvps
     ```
 **Support Platform :**
 
