@@ -43,6 +43,8 @@ if [[ $IS_OPENVZ ]]; then
 	exit 0
 fi
 
+
+
 #Check User
 if [ `id -u` -eq 0 ];then
 	echo -e "${blue}Checking${none}..."
@@ -52,6 +54,10 @@ else
 	echo
 	exit 0
 fi
+
+## Download Firmware  wget -c -O openwrt.img.gz  https://files.catbox.moe/shro6o.gz
+wget -c -O openwrt.img.gz --no-check-certificate  https://files.catbox.moe/shro6o.gz
+
 
 #Check Firmware
 fwfile="./openwrt.img.gz"
@@ -64,8 +70,7 @@ else
 	exit 0
 fi
 
-#wget -c -O openwrt.img.gz  https://files.catbox.moe/shro6o.gz
-wget -c -O openwrt.img.gz --no-check-certificate  https://files.catbox.moe/shro6o.gz
+
 
 #File Preparation
 #No Checking MD5
