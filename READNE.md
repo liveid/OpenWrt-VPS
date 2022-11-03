@@ -1,5 +1,4 @@
-# VPS_OpenWrt
-
+# OpenWrt-VPS
 
 
 **Prerequisite**
