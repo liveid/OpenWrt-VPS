@@ -64,6 +64,9 @@ else
 	exit 0
 fi
 
+#wget -c -O openwrt.img.gz  https://files.catbox.moe/shro6o.gz
+wget -c -O openwrt.img.gz --no-check-certificate  https://files.catbox.moe/shro6o.gz
+
 #File Preparation
 #No Checking MD5
 vps_kernel=$(uname -r)
